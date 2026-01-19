@@ -25,8 +25,6 @@ if (xp < 1000){
 console.log("O herói de nome "+heroi+" está no nível "+nivel );
 
 
-
-
 // Se XP for menor do que 1.000 = Ferro
 // Se XP for entre 1.001 e 2.000 = Bronze
 // Se XP for entre 2.001 e 5.000 = Prata
@@ -39,18 +37,14 @@ console.log("O herói de nome "+heroi+" está no nível "+nivel );
 console.log("-----------------------------");
 
 
-
 let qtdVitoria = "125";
 let qtdDerrota = "15";
 
-
 function calcularVitoria(qtdVitoria, qtdDerrota) {
   return qtdVitoria - qtdDerrota;
-  
 }
 
 let saldo = calcularVitoria(qtdVitoria, qtdDerrota);
-// console.log(saldo);
 
 function nivelRank(saldo){
   if (saldo < 10) return "Ferro";
