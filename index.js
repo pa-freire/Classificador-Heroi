@@ -6,26 +6,19 @@ let nivel = "";
 
 if (xp < 1000){
     nivel = "ferro";
-}
-if (xp > 1000 & xp <= 2000){
+} else if (xp <= 2000){
     nivel = "Bronze";
-}
-if (xp > 2000 & xp <= 5000){
+} else if (xp <= 5000){
     nivel = "Prata";
-}
-if (xp > 5000 & xp <= 7000){
+} else if (xp <= 7000){
     nivel = "Ouro";
-}
-if (xp > 7000 & xp <= 8000){
+} else if (xp <= 8000){
     nivel = "Platina";
-}
-if (xp > 8000 & xp <= 9000){
+} else if (xp <= 9000){
     nivel = "Ascendente"
-}
-if (xp > 9000 & xp <= 1000){
+} else if (xp <= 10000){
     nivel = "Imortal"
-}
-if (xp >= 10000 ){
+} else {
     nivel = "Radiante"
 }
 
@@ -42,3 +35,43 @@ console.log("O herói de nome "+heroi+" está no nível "+nivel );
 // Se XP for entre 8.001 e 9.000 = Ascendente
 // Se XP for entre 9.001 e 10.000= Imortal
 // Se XP for maior ou igual a 10.001 = Radiante
+
+console.log("-----------------------------");
+
+
+
+let qtdVitoria = "125";
+let qtdDerrota = "15";
+
+
+function calcularVitoria(qtdVitoria, qtdDerrota) {
+  return qtdVitoria - qtdDerrota;
+  
+}
+
+let saldo = calcularVitoria(qtdVitoria, qtdDerrota);
+// console.log(saldo);
+
+function nivelRank(saldo){
+  if (saldo < 10) return "Ferro";
+  if (saldo <= 20) return "Bronze";
+  if (saldo <= 50) return "Prata";
+  if (saldo <= 80) return "Ouro";
+  return "Diamante"
+}
+let rankluta = nivelRank (saldo);
+
+console.log("O Herói tem de saldo de "+saldo+ " está no rank de luta "+rankluta);
+
+
+
+
+// Se vitórias for menor do que 10 = Ferro
+// Se vitórias for entre 11 e 20 = Bronze
+// Se vitórias for entre 21 e 50 = Prata
+// Se vitórias for entre 51 e 80 = Ouro
+// Se vitórias for entre 81 e 90 = Diamante
+// Se vitórias for entre 91 e 100= Lendário
+// Se vitórias for maior ou igual a 101 = Imortal
+
+
