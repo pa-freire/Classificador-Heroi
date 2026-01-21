@@ -4,6 +4,7 @@ let heroi = "Paulo";
 let xp = 10400;
 let nivel = "";
 
+
 if (xp < 1000){
     nivel = "ferro";
 } else if (xp <= 2000){
